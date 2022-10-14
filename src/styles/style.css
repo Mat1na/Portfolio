@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
+:root {
+    --Dark:rgb(27,46,53);
+    --Light:#AAC9B6;
+    --my-font:'Amatic SC', cursive;
+}
+body{
+    font-family: var(--my-font);
+}
+
+/* Head section */
+.img-head {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Sections */
+.img-section2 {
+    width: 100%;
+    border-radius: 50%;
+}.img-section3 {
+    width:100%;
+    border-radius: 50%;
+}
+
+
+
+/* custom button */
+a:-webkit-any-link {
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+#btn {
+    background: none;
+    height: 3rem;
+    min-width:8rem;
+    border: none;
+    border-top: 2px solid rgb(27,46,53);
+    /* border-radius: 10px; */
+    color:rgb(27,46,53);
+    font-size: 3rem;
+    font-family: var(--my-font);
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#btn #circle {
+    width:0.5rem;
+    height: 0.5rem;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#btn:hover {
+    background: transparent;
+    border: none;
+}
+
+#btn:hover #circle {
+    height:3.5rem;;
+    width:20rem;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(27,46,53);
+}
+
