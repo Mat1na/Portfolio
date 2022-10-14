@@ -66,18 +66,47 @@ body{
     background:white;
     padding: 5px 10px;
     transition: height 800ms ease-in-out ;
-    height: 10vh;
+    height:4rem;
 }
 
 
 /* Head section */
+.head{
+    padding-top: 5rem;
+    position: relative;
+}
 .img-head {
     width: 60%;
     border-radius: 50%;
 }
 
 .typewriter{
-    font-size: 3rem;
+    font-size:5vw;
+}
+.box{
+    height: 30vh;
+    width: 50vw;
+    background-color: var(--Light);
+    position:absolute;
+    z-index: -1;
+}
+
+.boxGrow{
+    animation-duration: 5s;
+    animation-name: box-grow;
+}
+
+@keyframes box-grow {
+    0% {
+       transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(5);
+      }
+    
 }
 
 
@@ -94,6 +123,8 @@ body{
     height: 50vh;
     padding-top: 5rem;
 }
+
+
 
 
 /* custom button */
@@ -115,13 +146,13 @@ a:-webkit-any-link {
 
 #btn {
     background: none;
-    height: 3rem;
-    min-width:8rem;
+    height:5vw;
+    min-width:10vw;
     border: none;
     border-top: 2px solid rgb(27,46,53);
     /* border-radius: 10px; */
     color:rgb(27,46,53);
-    font-size: 3rem;
+    font-size: 5vw;
     font-family: var(--my-font);
     position: relative;
     transition: 1s;
@@ -152,7 +183,7 @@ a:-webkit-any-link {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-size: 2rem;
+    font-size:4vw;
 }
 
 #btn:hover {
@@ -161,7 +192,7 @@ a:-webkit-any-link {
 }
 
 #btn:hover #circle {
-    height:3.5rem;;
+    height:2rem;;
     width:100%;
     left: 0;
     border-radius: 0;

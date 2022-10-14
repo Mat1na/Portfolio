@@ -1,15 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import { Button, Col, Row, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState,  } from 'react'
+import {Col, Row, Container } from 'react-bootstrap';
+import { useInView } from 'react-intersection-observer';
 import Typewriter from 'typewriter-effect';
-import { BsArrowDown } from 'react-icons/bs'
 
 
 
-function Home() {
+
+function Home({chilrden}) {
+  const { ref: boxRef, inView: myBoxIsVisible} = useInView();
+  // const boxRef=useRef()
+  // const [myBoxIsVisible,setMyBoxIsVisible]=useState()
+  // console.log(myBoxIsVisible)
+  // useEffect(() => {
+  //  const observer= new IntersectionObserver((entries)=>{
+  //   const entry=entries[0]
+  //  setMyBoxIsVisible(entry.isIntersecting)
+  //  })
+  //  observer.observe(boxRef.current)
+  // }, [])
+
 
   const [show, setShow] = useState(false)
-
   useEffect(() => {
     setTimeout(() => setShow(true), 11000);
   }, []);
@@ -17,7 +28,7 @@ function Home() {
 
   return (
     <>
-      <Row className='head d-flex justify-content-center align-items-center p-5' >
+      <Row className='head d-flex justify-content-center align-items-center' >
         <Col md={6} xs={12} className="img-home-container d-flex justify-content-center align-items-center">
           <img src='./images/me33.png' className='img-head' />
         </Col>
@@ -40,7 +51,7 @@ function Home() {
             {show && <a id="btn" href="/Contact"><span className="noselect">Say Hi!</span><div id="circle"></div></a>}
           </div>
         </Col>
-        <div className='box'></div>
+        <div className="box" ref={boxRef}></div>
       </Row>
 
       < Container className='section1 d-flex justify-content-center align-items-center text-center'>
@@ -69,7 +80,7 @@ function Home() {
           <img src='./images/code.jpg' className='img-section2' />
         </Col>
       </Row>
-
+<div className='p-5'><hr/></div>
       <Row className='section3 d-flex justify-content-center align-items-center'>
         <Col md={6} className='img-section3-container p-5'>
           <img src='./images/Designer-girlgreen.jpg' className='img-section3' />
