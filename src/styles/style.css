@@ -9,13 +9,77 @@
 }
 body{
     font-family: var(--my-font);
+    padding:0px 10px;
 }
+
+/* Navigation */
+
+/* collapse */
+.collapse.show>div.me-auto {
+    
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 10rem;
+    width: 30%;
+}
+.navbar-collapse.collapsing>div.me-auto {
+    background: #AAC9B6;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height:10rem;
+    transition: background-color 800ms ease-in-out
+}
+
+.navbar-collapse.collapsing {
+    height:100vh;
+    background: #AAC9B6;
+    transition: height 800ms ease-in-out;
+    padding-left: 20px;
+}
+
+
+.collapse.show {
+ 
+    height: 100vh;
+    background:var(--Light);
+    padding-left: 20px;
+    padding-top: 5p;
+
+}
+
+
+
+.collapse.show>div.social {
+    
+    font-size:1.5rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    background:white;
+    padding: 5px 10px;
+    transition: height 800ms ease-in-out ;
+    height: 10vh;
+}
+
 
 /* Head section */
 .img-head {
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
 }
+
+.typewriter{
+    font-size: 3rem;
+}
+
 
 /* Sections */
 .img-section2 {
@@ -26,6 +90,10 @@ body{
     border-radius: 50%;
 }
 
+.section1{
+    height: 50vh;
+    padding-top: 5rem;
+}
 
 
 /* custom button */
@@ -66,7 +134,7 @@ a:-webkit-any-link {
 }
 
 #btn #circle {
-    width:0.5rem;
+    width:50%;
     height: 0.5rem;
     background: transparent;
     border-radius: 50%;
@@ -84,6 +152,7 @@ a:-webkit-any-link {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-size: 2rem;
 }
 
 #btn:hover {
@@ -93,7 +162,7 @@ a:-webkit-any-link {
 
 #btn:hover #circle {
     height:3.5rem;;
-    width:20rem;
+    width:100%;
     left: 0;
     border-radius: 0;
     border-bottom: 2px solid rgb(27,46,53);
