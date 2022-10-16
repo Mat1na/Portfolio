@@ -18,20 +18,20 @@ body{
 .collapse.show>div.me-auto {
     
     font-weight: 400;
-    font-size: 6rem;
-    line-height: 7.5rem;
+    font-size:4rem;
+    line-height: 7rem;
     width: 30%;
 }
 .navbar-collapse.collapsing>div.me-auto {
     background: #AAC9B6;
     font-weight: 400;
-    font-size: 6rem;
-    line-height:8rem;
+    font-size: 4rem;
+    line-height:7rem;
     transition: background-color 800ms ease-in-out
 }
 
 .navbar-collapse.collapsing {
-    height:100vh;
+    height:91vh;
     background: #AAC9B6;
     transition: height 800ms ease-in-out;
     padding-left: 20px;
@@ -40,7 +40,7 @@ body{
 
 .collapse.show {
  
-    height: 100vh;
+    height: 91vh;
     background:var(--Light);
     padding-left: 20px;
      margin:0px ;
@@ -51,7 +51,7 @@ body{
 
 .collapse.show>div.social {
     
-    font-size:1.5rem;
+    font-size:1rem;
 }
 
 .header {
@@ -79,7 +79,7 @@ body{
 
 .navbar-brand:hover {
 
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 
 }
 
@@ -153,7 +153,13 @@ body{
 
 .section1{
     height: 50vh;
-    padding-top: 5rem;
+    padding-top: 10rem;
+}
+.section2{
+    padding-top: 10rem;
+}
+.section3{
+    padding-top: 10rem;
 }
 
 /* footer */
@@ -194,7 +200,7 @@ body{
       }
 
      100% {
-        transform: scale(1.5,5);
+        transform: scale(1.5,6);
       }
     
 }
@@ -310,3 +316,63 @@ a:-webkit-any-link {
     border-bottom: 2px solid rgb(27,46,53);
 }
 
+/* toggler */
+
+label{
+    display:flex;
+     flex-direction:column;
+     width:70px;
+     cursor:pointer;
+   }
+   
+   label span{
+     background: #fff;
+     border-radius:10px;
+     height:7px;
+     margin: 7px 0;
+     transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+   }
+   
+   
+   span:nth-of-type(1){
+     width:50%;
+     
+   }
+   
+   span:nth-of-type(2){
+     width:100%;
+   }
+   
+   
+   span:nth-of-type(3){
+     width:75%;
+    
+   }
+   
+   
+   input[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(1){
+     transform-origin:bottom;
+     transform:rotatez(45deg) translate(8px,0px)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(2){
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ span:nth-of-type(3){
+     
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(30px,-11px) rotatez(45deg);
+   
+   }

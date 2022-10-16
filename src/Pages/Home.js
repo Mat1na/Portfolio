@@ -46,14 +46,14 @@ function Home({chilrden}) {
         <div className={`box  ${myBoxIsVisible? "boxGrow":""}`} ref={boxRef}></div>
       </Row>
 
-      < Container className='section1 d-flex justify-content-center align-items-center text-center'>
+      < Container className='section1 d-flex justify-content-center align-items-center text-center '>
         <div id="wrapper" >
           <div id="wrapper-inner">
             <Col xs={12} id="scroll-title" className='d-flex justify-content-center align-items-center text-center '>
               Keep Scrolling
             </Col>
             <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center pt-2'>
-              <span className="arrow-down">
+              <span className="arrow-down d-flex justify-content-center align-items-center text-center">
               </span>
             </Col>
           </div>
@@ -69,11 +69,11 @@ function Home({chilrden}) {
           </div>
         </Col >
         <Col md={6} className="img-section-container p-5"  >
-          <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible? "imgMove":""}`}  ref={img2Ref} />
+          <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible? "imgMove ":""}`}  ref={img2Ref} />
         </Col>
       </Row>
 <div className='p-5'><hr/></div>
-      <Row className='section3 d-flex justify-content-center align-items-center'>
+      <Row className='section3 d-flex justify-content-center align-items-center '>
         <Col md={6} className='img-section3-container p-5'>
           <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible? "imgMove":""}`}  ref={img3Ref}  />
         </Col>

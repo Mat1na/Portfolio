@@ -6,7 +6,7 @@ import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 function Header() {
 
   return (
-    <Navbar bg="none" expand="lg" className='header navbar-light  d-flex justify-content-around '>
+    <Navbar bg="none" expand="lg" className='header navbar-light  d-flex justify-content-around'>
 
       <Navbar.Brand href="/">Mat1na <BiCodeCurly /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-border' />
