@@ -143,11 +143,12 @@ body{
 .img-section2 {
     width: 100%;
     border-radius: 50%;
-    transition: rotate 5s;
+    transition: transform 2s;
 
 }.img-section3 {
     width:100%;
     border-radius: 50%;
+    transition: transform 2s;
 }
 
 .section1{
@@ -210,25 +211,25 @@ body{
        
       }
     10% {
-        transform:scale(1, 1) ;
+        transform:scale(0, 0) ;
       }
      30% {
-        transform: rotate(2deg) ;
+        transform:rotate(2deg) ;
       }
  
      50% {
-        transform: rotate(-5deg);
+        transform: rotate(-2deg);
       }
 
      70% {
-        transform: rotate(4deg);
+        transform: rotate(1deg);
       }
       90% {
-        transform: rotate(-3deg);
+        transform: rotate(-1deg);
       }
 
      100% {
-        transform: rotate(1deg);
+        transform: rotate(0.2deg);
       }
     
 }
