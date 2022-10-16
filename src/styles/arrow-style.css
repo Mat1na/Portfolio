@@ -27,13 +27,14 @@
     display: block;
     position: relative;
     padding-top: 79px;
-  text-align:center;
+    align-items:center !important;
 }
 .arrow-down {
     display: block;
     margin: 0 0;
     width: 10px;
     height: 38px;
+   
 }
 
 #scroll-title {
@@ -62,10 +63,9 @@ text-orientation: mixed;
     
    
     top:1rem;
-   
-    margin-left: -1px;
+    margin-left: 0px;
     width: 1px;
-    height: 100px;
+    height: 200px;
     background:rgb(27, 46, 53);
     content: ' ';
 }

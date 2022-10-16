@@ -8,16 +8,8 @@ import Typewriter from 'typewriter-effect';
 
 function Home({chilrden}) {
   const { ref: boxRef, inView: myBoxIsVisible} = useInView();
-  // const boxRef=useRef()
-  // const [myBoxIsVisible,setMyBoxIsVisible]=useState()
-  // console.log(myBoxIsVisible)
-  // useEffect(() => {
-  //  const observer= new IntersectionObserver((entries)=>{
-  //   const entry=entries[0]
-  //  setMyBoxIsVisible(entry.isIntersecting)
-  //  })
-  //  observer.observe(boxRef.current)
-  // }, [])
+  const { ref: img2Ref, inView: myImg2IsVisible} = useInView();
+  const { ref: img3Ref, inView: myImg3IsVisible} = useInView();
 
 
   const [show, setShow] = useState(false)
@@ -51,16 +43,16 @@ function Home({chilrden}) {
             {show && <a id="btn" href="/Contact"><span className="noselect">Say Hi!</span><div id="circle"></div></a>}
           </div>
         </Col>
-        <div className="box" ref={boxRef}></div>
+        <div className={`box  ${myBoxIsVisible? "boxGrow":""}`} ref={boxRef}></div>
       </Row>
 
       < Container className='section1 d-flex justify-content-center align-items-center text-center'>
         <div id="wrapper" >
           <div id="wrapper-inner">
             <Col xs={12} id="scroll-title" className='d-flex justify-content-center align-items-center text-center '>
-              Scroll down
+              Keep Scrolling
             </Col>
-            <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center'>
+            <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center pt-2'>
               <span className="arrow-down">
               </span>
             </Col>
@@ -76,17 +68,17 @@ function Home({chilrden}) {
             <a id="btn" href='/projects'  ><span className="noselect">Take a look</span><div id="circle"></div></a>
           </div>
         </Col >
-        <Col md={6} className='img-section2-container p-5'>
-          <img src='./images/code.jpg' className='img-section2' />
+        <Col md={6} className="img-section-container p-5"  >
+          <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible? "imgMove":""}`}  ref={img2Ref} />
         </Col>
       </Row>
 <div className='p-5'><hr/></div>
       <Row className='section3 d-flex justify-content-center align-items-center'>
         <Col md={6} className='img-section3-container p-5'>
-          <img src='./images/Designer-girlgreen.jpg' className='img-section3' />
+          <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible? "imgMove":""}`}  ref={img3Ref}  />
         </Col>
         <Col md={6} className='section3-text p-5'>
-          <h1>My projects</h1>
+          <h1>My projects </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
           <div className='btn3-container'><a id="btn" href='/projects'  ><span className="noselect">Take a look</span><div id="circle"></div></a></div>
         </Col >
