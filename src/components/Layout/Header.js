@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { Nav, Navbar, Container } from "react-bootstrap"
 import { BiCodeCurly } from 'react-icons/bi'
 import { FaInstagram, FaLinkedin, FaGithub, } from 'react-icons/fa'
-import {MdOutlineSegment} from 'react-icons/md'
+import {MdOutlineSegment, MdOutlineClose} from 'react-icons/md'
 
 function Header() {
 
@@ -12,7 +12,8 @@ function Header() {
 
       <Navbar.Brand href="/">Mat1na <BiCodeCurly /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"  className='toggler' >  
-    {<MdOutlineSegment size={'2em'} fill='var(--Dark)'  className="social-icon" />}
+     <MdOutlineSegment size={'2em'} fill='var(--Dark)'  className="social-icon" />
+     {/* <MdOutlineClose size={'2em'} fill='var(--Dark)'  className="social-icon" /> */}
       </Navbar.Toggle>
     
       <Navbar.Collapse id="basic-navbar-nav" >
