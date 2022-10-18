@@ -250,6 +250,18 @@ background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
   background-size: cover;
   height: 100vh;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 5.0) 50%, transparent 100%);
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.web-sites-section::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.web-sites-section{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 /* [1] The container */
 .img-hover-zoom {
