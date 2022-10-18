@@ -21,15 +21,19 @@ function Contact() {
   }
   return (
     <>
-      <div className='contact-page'>
-        <Row className='title-container pl-4'>
+      <div className='contact-page '>
+        <Row className='title-container w-100'>
+        <Col md={12} className='pb-2'>
           <div className='contact-me pb-4'>
             Contact me
           </div>
+          </Col>
+          <Col md={12} className='pb-2'>
           <h4 className='pb-4'>
            Do you want to hire me or just say hi?<br/>
            Feel free to send me an e-mail or call me! 👇
           </h4>
+          </Col>
           <Col md={12} className='pb-2'>
             <a href="tel:+32478123137" className='mail-link'><BsPhoneVibrateFill size={'2em'} fill='var(--Light)' className="social-icon p-1 rounded-1 mx-1" />+32 478 12 31 37</a>
           </Col>
