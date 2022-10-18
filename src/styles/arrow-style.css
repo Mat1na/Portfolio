@@ -26,8 +26,9 @@ padding-left: 5px;
 #scroll-down {
    padding-left: 8px;
     position: relative;
-    padding-top: 79px;
+    padding-top: 20px;
     align-items:center !important;
+ 
    
 }
 .arrow-down {
@@ -44,7 +45,7 @@ padding-left: 5px;
     text-transform: uppercase;
     color:rgb(27, 46, 53);
   font-family: 'Amatic SC', cursive;;
-  font-size:14px;
+  font-size:1.5em;
   font-weight:bold;
   letter-spacing:.1em;
   writing-mode: vertical-rl;

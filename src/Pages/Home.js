@@ -10,6 +10,7 @@ function Home({chilrden}) {
   const { ref: boxRef, inView: myBoxIsVisible} = useInView();
   const { ref: img2Ref, inView: myImg2IsVisible} = useInView();
   const { ref: img3Ref, inView: myImg3IsVisible} = useInView();
+  console.log(myImg2IsVisible)
 
 
   const [show, setShow] = useState(false)
@@ -52,7 +53,7 @@ function Home({chilrden}) {
             <Col md={12} id="scroll-title" className=' '>
               Keep Scrolling
             </Col>
-            <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center pt-2'>
+            <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center '>
               <span className="arrow-down ">
               </span>
             </Col>
