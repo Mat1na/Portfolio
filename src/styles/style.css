@@ -240,6 +240,32 @@ margin: 0;
 .card-projects{
   margin-top: 10rem;
 }
+.web-sites-section{
+background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
+  margin-top: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 5.0) 50%, transparent 100%);
+}
+/* [1] The container */
+.img-hover-zoom {
+ /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+
+
 
 /* Animations */
 
