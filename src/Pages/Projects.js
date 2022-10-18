@@ -8,7 +8,7 @@ function Projects() {
   return (
    <>
    <Container>
- <Row className='justify-content-center'>
+ <Row className='justify-content-center web-sites' > 
   <Col className='d-flex justify-content-center align-items-center'>
  <Card style={{ width: '18rem' }} className="card-projects">
       <Card.Img variant="top" src='./images/movieapp.jpg' />
