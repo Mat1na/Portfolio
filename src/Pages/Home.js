@@ -47,13 +47,13 @@ function Home({chilrden}) {
       </Row>
 
       < Container className='section1 d-flex justify-content-center align-items-center text-center '>
-        <div id="wrapper" >
-          <div id="wrapper-inner">
-            <Col xs={12} id="scroll-title" className='d-flex justify-content-center align-items-center text-center '>
+        <div id="wrapper d-flex justify-content-center align-items-center text-center" >
+          <div id="wrapper-inner ">
+            <Col md={12} id="scroll-title" className=' '>
               Keep Scrolling
             </Col>
             <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center pt-2'>
-              <span className="arrow-down d-flex justify-content-center align-items-center text-center">
+              <span className="arrow-down ">
               </span>
             </Col>
           </div>
@@ -65,7 +65,7 @@ function Home({chilrden}) {
           <h1>My projects</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
           <div className='btn2-container'>
-            <a id="btn" href='/projects'  ><span className="noselect">Take a look</span><div id="circle"></div></a>
+            <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
           </div>
         </Col >
         <Col md={6} className="img-section-container p-5"  >
@@ -80,7 +80,7 @@ function Home({chilrden}) {
         <Col md={6} className='section3-text p-5'>
           <h1>My projects </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
-          <div className='btn3-container'><a id="btn" href='/projects'  ><span className="noselect">Take a look</span><div id="circle"></div></a></div>
+          <div className='btn3-container'><a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a></div>
         </Col >
       </Row>
 

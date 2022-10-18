@@ -1,7 +1,9 @@
+import { Button } from 'bootstrap';
 import React, { useEffect } from 'react'
 import { Nav, Navbar, Container } from "react-bootstrap"
 import { BiCodeCurly } from 'react-icons/bi'
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaGithub, } from 'react-icons/fa'
+import {MdOutlineSegment} from 'react-icons/md'
 
 function Header() {
 
@@ -9,7 +11,10 @@ function Header() {
     <Navbar bg="none" expand="lg" className='header navbar-light  d-flex justify-content-around'>
 
       <Navbar.Brand href="/">Mat1na <BiCodeCurly /></Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" className='nav-border' />
+      <Navbar.Toggle aria-controls="basic-navbar-nav"  className='toggler' >  
+    {<MdOutlineSegment size={'2em'} fill='var(--Dark)'  className="social-icon" />}
+      </Navbar.Toggle>
+    
       <Navbar.Collapse id="basic-navbar-nav" >
         <Nav className="me-auto">
           <Nav.Link href="/">Home</Nav.Link>

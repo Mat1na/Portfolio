@@ -17,23 +17,25 @@
 }
 
 #wrapper-inner {
-
+padding-left: 5px;
   vertical-align:middle;
   width:100%;
   height:100%;
 }
 
 #scroll-down {
-    display: block;
+   padding-left: 8px;
     position: relative;
     padding-top: 79px;
     align-items:center !important;
+   
 }
 .arrow-down {
     display: block;
     margin: 0 0;
     width: 10px;
     height: 38px;
+   
    
 }
 
@@ -63,7 +65,7 @@ text-orientation: mixed;
     
    
     top:1rem;
-    margin-left: 0px;
+ 
     width: 1px;
     height: 200px;
     background:rgb(27, 46, 53);
