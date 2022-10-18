@@ -188,7 +188,7 @@ padding: 0;
 margin: 0;
 }
 .title-container {
-  padding: 10rem 10rem 0;
+  margin: 5rem 10rem 0;
   color: var(--Light);
 
 }
@@ -214,7 +214,7 @@ margin: 0;
   height: 80%;
   width: 80%;
   position: absolute;
-  z-index: 100000;
+  z-index: 10;
   left: 3rem;
   top:2rem;
   font-weight: 900;
@@ -230,10 +230,15 @@ margin: 0;
   left: 0px;
   top: 0px;
   padding-bottom: 5rem;
-  z-index: 100;
+  z-index: 1;
 }
 .mail-link{
   color: var(--Light);
+}
+
+/* projects */
+.card-projects{
+  margin-top: 10rem;
 }
 
 /* Animations */
