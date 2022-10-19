@@ -20,7 +20,7 @@ function Projects() {
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="https://my-portfolio-stamatia-bampa.vercel.app/" target="_blank"> <SiNetlify/> MyPortfolio</Card.Link>
+        <Card.Link href="/" > <SiNetlify/> MyPortfolio</Card.Link>
         <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
       </Card.Body>
     </Card>

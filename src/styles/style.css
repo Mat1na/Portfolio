@@ -8,12 +8,12 @@
   --my-font: 'Amatic SC', cursive;
   font-weight: 700;
   padding: 0px 20px;
+ 
 }
 
 body {
   font-family: var(--my-font);
- 
-  font-weight: 700;
+    font-weight: 700;
 }
 
 /* Navigation */
@@ -181,23 +181,20 @@ body {
 
 /* contact */
 .contact-page{
+padding: 0 1rem;
 
-min-height: 100%;
-min-width: 100%;
-padding: 0;
-margin: 0;
 }
 .title-container {
-
 padding-top:5rem;
   color: var(--Dark);
-
+  width: 80vw;
 }
 .contact-me {
   font-weight: 900;
   font-size: 4rem;
   text-align: center;
   color:var(--Dark);
+  
   
 }
 
@@ -206,8 +203,7 @@ padding-top:5rem;
   padding-bottom: 5rem;
   border-radius: 10px;
   background-color: var(--Light);
-  height:100%;
-  width:100%;
+width: 80vw;
   margin-bottom: 10rem;
 }
 
@@ -218,14 +214,7 @@ padding-top:5rem;
   background-color: var(--Light);
  }
 
-.contact-bg {
-  height:80vh;
-  width:80vw;
-  background-color: var(--Light);
-  border-radius: 10px;
-  padding-bottom: 5rem;
 
-}
 .mail-link{
   color: var(--Dark);
 }
@@ -236,6 +225,7 @@ padding-top:5rem;
 }
 .web-sites-section{
 background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
+
   margin-top: 5rem;
   padding-bottom: 15rem;
   background-position: center;

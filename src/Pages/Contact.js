@@ -22,7 +22,7 @@ function Contact() {
   return (
     <>
       <Row className='contact-page d-flex justify-content-center align-items-center  '>
-        <Row className='title-container w-100'>
+        <Row className='title-container'>
         <Col md={12} className='pb-2'>
           <div className='contact-me pb-4'>
             Contact me
@@ -45,7 +45,7 @@ function Contact() {
           </Col>
         </Row>
 
-        <Container className='contact-container  d-flex justify-content-center align-items-center '>
+        <Row className='contact-container  d-flex justify-content-center align-items-center '>
               <Form className='form' ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Your Name</Form.Label>
@@ -61,7 +61,7 @@ function Contact() {
             </Form.Group>
             <Button as="input" type="submit" value="Submit" variant="outline-success w-100" />
           </Form>
-          </Container>
+          </Row>
       
       </Row>
     </>
