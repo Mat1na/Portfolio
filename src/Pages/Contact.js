@@ -21,7 +21,7 @@ function Contact() {
   }
   return (
     <>
-      <div className='contact-page '>
+      <Row className='contact-page d-flex justify-content-center align-items-center  '>
         <Row className='title-container w-100'>
         <Col md={12} className='pb-2'>
           <div className='contact-me pb-4'>
@@ -31,7 +31,7 @@ function Contact() {
           <Col md={12} className='pb-2'>
           <h4 className='pb-4'>
            Do you want to hire me or just say hi?<br/>
-           Feel free to send me an e-mail or call me! 👇
+           Feel free to send me an e-mail or call me! 
           </h4>
           </Col>
           <Col md={12} className='pb-2'>
@@ -44,9 +44,9 @@ function Contact() {
             <p><BsPinMapFill size={'2em'} fill='var(--Light)' className="social-icon p-1 rounded-1 mx-1" />Dilbeek, Belgium</p>
           </Col>
         </Row>
-        <Container className='contact-container'>
-          <div className='contact-bg'></div>
-          <Form className='form' ref={form} onSubmit={sendEmail}>
+
+        <Container className='contact-container  d-flex justify-content-center align-items-center '>
+              <Form className='form' ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Your Name</Form.Label>
               <Form.Control name="user_name" type="text" placeholder="Enter your name here..." />
@@ -61,8 +61,9 @@ function Contact() {
             </Form.Group>
             <Button as="input" type="submit" value="Submit" variant="outline-success w-100" />
           </Form>
-        </Container>
-      </div>
+          </Container>
+      
+      </Row>
     </>
   )
 }

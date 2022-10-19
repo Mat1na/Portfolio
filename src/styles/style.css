@@ -181,61 +181,53 @@ body {
 
 /* contact */
 .contact-page{
-background-color: var(--Dark);
+
 min-height: 100%;
 min-width: 100%;
 padding: 0;
 margin: 0;
 }
 .title-container {
-  margin-left: 1rem;
-padding-left:2rem;
+
 padding-top:5rem;
-  color: var(--Light);
+  color: var(--Dark);
 
 }
 .contact-me {
   font-weight: 900;
   font-size: 4rem;
   text-align: center;
-  color:var(--Light);
+  color:var(--Dark);
   
 }
 
 .contact-container {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 80vh;
-  width: 80vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 10px;
+  background-color: var(--Light);
+  height:100%;
+  width:100%;
+  margin-bottom: 10rem;
 }
 
 .form {
   height: 80%;
   width: 80%;
-  position: absolute;
-  z-index: 10;
-  left:auto;
-  top:2rem;
   font-weight: 900;
- 
-}
+  background-color: var(--Light);
+ }
 
 .contact-bg {
-  height:80%;
-  width:100%;
-  position: absolute;
+  height:80vh;
+  width:80vw;
   background-color: var(--Light);
   border-radius: 10px;
-  left: 0px;
-  top: 0px;
   padding-bottom: 5rem;
-  z-index: 1;
+
 }
 .mail-link{
-  color: var(--Light);
+  color: var(--Dark);
 }
 
 /* projects */
