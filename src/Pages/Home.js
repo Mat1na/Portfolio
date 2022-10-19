@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState,  } from 'react'
 import {Col, Row, Container } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
 import Typewriter from 'typewriter-effect';
-
+import Pdf from "../../src/document";
 
 
 
