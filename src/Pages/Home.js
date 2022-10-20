@@ -94,7 +94,7 @@ function Home({ chilrden }) {
         <Col md={6} className={`img-section3-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
           <h1>My projects </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
-          <div className='btn3-container'><a id="btn" href='./document/portfolio.pdf' target="blank" ><span className="noselect2">Take a look</span><div id="circle"></div></a></div>
+          <div className='btn3-container'><a id="btn" href='./document/portfolio2022.pdf' target="blank" ><span className="noselect2">Take a look</span><div id="circle"></div></a></div>
         </Col >
       </Row>
 
