@@ -78,7 +78,7 @@ function Home({ chilrden }) {
           <Col md={6} className="img-section-container p-5"  >
             <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
           </Col>
-          <Col md={6} className='section2-text p-5'>
+          <Col md={6} className={`img-section2-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
             <h1>My projects {console.log(window.innerWidth)}</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
             <div className='btn2-container'>
