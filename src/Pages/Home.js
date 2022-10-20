@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState,  } from 'react'
-import {Col, Row, Container } from 'react-bootstrap';
+import React, { useEffect, useRef, useState, } from 'react'
+import { Col, Row, Container } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
 import Typewriter from 'typewriter-effect';
 
 
 
 
-function Home({chilrden}) {
-  const { ref: boxRef, inView: myBoxIsVisible} = useInView();
-  const { ref: img2Ref, inView: myImg2IsVisible} = useInView();
-  const { ref: img3Ref, inView: myImg3IsVisible} = useInView();
+function Home({ chilrden }) {
+  const { ref: boxRef, inView: myBoxIsVisible } = useInView();
+  const { ref: img2Ref, inView: myImg2IsVisible } = useInView();
+  const { ref: img3Ref, inView: myImg3IsVisible } = useInView();
   console.log(myImg2IsVisible)
 
 
@@ -44,7 +44,7 @@ function Home({chilrden}) {
             {show && <a id="btn" href="/Contact"><span className="noselect">Say Hi!</span><div id="circle"></div></a>}
           </div>
         </Col>
-        <div className={`box  ${myBoxIsVisible? "boxGrow":""}`} ref={boxRef}></div>
+        <div className={`box  ${myBoxIsVisible ? "boxGrow" : ""}`} ref={boxRef}></div>
       </Row>
 
       < Container className='section1 d-flex justify-content-center align-items-center text-center '>
@@ -61,24 +61,37 @@ function Home({chilrden}) {
         </div>
       </ Container>
 
-      <Row className='section2 d-flex justify-content-center align-items-center'>
-        <Col md={6} className='section2-text p-5'>
-          <h1>My projects</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
-          <div className='btn2-container'>
-            <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
-          </div>
-        </Col >
-        <Col md={6} className="img-section-container p-5"  >
-          <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible? "imgMove ":""}`}  ref={img2Ref} />
-        </Col>
-      </Row>
-<div className='p-5'><hr/></div>
+      {window.innerWidth >= 768? (
+        <Row className='section2 d-flex justify-content-center align-items-center'>
+          <Col md={6} className='section2-text p-5'>
+            <h1>My projects {console.log(window.innerWidth)}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
+            <div className='btn2-container'>
+              <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
+            </div>
+          </Col >
+          <Col md={6} className="img-section-container p-5"  >
+            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
+          </Col>
+        </Row>) : (
+        <Row className='section2 d-flex justify-content-center align-items-center'>
+          <Col md={6} className="img-section-container p-5"  >
+            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
+          </Col>
+          <Col md={6} className='section2-text p-5'>
+            <h1>My projects {console.log(window.innerWidth)}</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
+            <div className='btn2-container'>
+              <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
+            </div>
+          </Col >
+        </Row>)}
+      <div className=' m-5'><hr /></div>
       <Row className='section3 d-flex justify-content-center align-items-center '>
-        <Col md={6} className='img-section3-container p-5'>
-          <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible? "imgMove":""}`}  ref={img3Ref}  />
+        <Col md={6} className={`img-section3-container ${window.innerWidth >= 768? "p-5":"px-5 py-2"}`}>
+          <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible ? "imgMove" : ""}`} ref={img3Ref} />
         </Col>
-        <Col md={6} className='section3-text p-5'>
+        <Col md={6} className={`img-section3-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
           <h1>My projects </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
           <div className='btn3-container'><a id="btn" href='./document/portfolio.pdf' target="blank" ><span className="noselect2">Take a look</span><div id="circle"></div></a></div>

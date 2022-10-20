@@ -7,7 +7,8 @@
   --Light: #AAC9B6;
   --my-font: 'Amatic SC', cursive;
   font-weight: 700;
-  padding: 0px 20px;
+  padding: 0px ;
+ margin: opx;
  
 }
 
@@ -16,15 +17,19 @@ body {
     font-weight: 700;
 }
 
+.row {
+   --bs-gutter-x:0;}
+
+
 /* Navigation */
 
 /* collapse */
 .collapse.show>div.me-auto {
 
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 7rem;
-  width: 30%;
+  width:50%;
 }
 
 .navbar-collapse.collapsing>div.me-auto {
@@ -161,23 +166,12 @@ body {
 }
 
 .section2 {
-  padding-top: 10rem;
+ margin-top: 10rem;
 }
 
-.section3 {
-  padding-top: 10rem;
-}
 
-/* footer */
-.footer {
-  text-align: center;
-  background: rgb(255, 255, 255);
-  color:var(--Dark);
-  padding: 20px;
-  margin-top: auto;
-  bottom: 0;
-  width: 100%;
-}
+
+
 
 /* contact */
 .contact-page{
@@ -262,7 +256,17 @@ background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
 }
 
 
-
+/* footer */
+.footer {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  color:var(--Dark);
+  padding: 20px;
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(235, 234, 234);
+}
 
 /* Animations */
 
