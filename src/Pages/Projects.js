@@ -52,14 +52,14 @@ function Projects() {
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="https://the-today-news.vercel.app/country/US" target="_blank"> <SiVercel/> TheTodayNews</Card.Link>
+        <Card.Link href="https://the-today-news.vercel.app" target="_blank"> <SiVercel/> TheTodayNews</Card.Link>
         <Card.Link href="https://github.com/Mat1na/NewsAppFrontForDeploy" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
       </Card.Body>
     </Card>
     </Col>
  </Row>
    </Container>
-   <Container></Container>
+  
    </>
   )
 }

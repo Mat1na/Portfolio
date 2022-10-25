@@ -49,15 +49,15 @@ function Contact() {
               <Form className='form' ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Your Name</Form.Label>
-              <Form.Control name="user_name" type="text" placeholder="Enter your name here..." />
+              <Form.Control name="user_name" type="text" placeholder="Enter your name here..." required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
-              <Form.Control name="user_email" type="email" placeholder="name@example.com" />
+              <Form.Control name="user_email" type="email" placeholder="name@example.com" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Label>Write something</Form.Label>
-              <Form.Control as="textarea" name="message" rows={3} />
+              <Form.Control as="textarea" name="message" rows={3} required />
             </Form.Group>
             <Button as="input" type="submit" value="Submit" variant="outline-success w-100" />
           </Form>

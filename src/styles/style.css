@@ -4,21 +4,22 @@
 
 :root {
   --Dark: rgb(27, 46, 53);
-  --Light: #AAC9B6;
+  --Light: rgb(170, 201, 182);
   --my-font: 'Amatic SC', cursive;
   font-weight: 700;
-  padding: 0px ;
- margin: opx;
- 
+  padding: 0px;
+  margin: opx;
+
 }
 
 body {
   font-family: var(--my-font);
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .row {
-   --bs-gutter-x:0;}
+  --bs-gutter-x: 0;
+}
 
 
 /* Navigation */
@@ -29,11 +30,11 @@ body {
   font-weight: 400;
   font-size: 3rem;
   line-height: 7rem;
-  width:50%;
+  width: 50%;
 }
 
 .navbar-collapse.collapsing>div.me-auto {
-  background: #AAC9B6;
+  background: var(--Light);
   font-weight: 400;
   font-size: 3rem;
   line-height: 7rem;
@@ -166,7 +167,7 @@ body {
 }
 
 .section2 {
- margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 
@@ -174,22 +175,24 @@ body {
 
 
 /* contact */
-.contact-page{
-padding: 0 1rem;
+.contact-page {
+  padding: 0 1rem;
 
 }
+
 .title-container {
-padding-top:5rem;
+  padding-top: 5rem;
   color: var(--Dark);
   width: 80vw;
 }
+
 .contact-me {
   font-weight: 900;
   font-size: 4rem;
   text-align: center;
-  color:var(--Dark);
-  
-  
+  color: var(--Dark);
+
+
 }
 
 .contact-container {
@@ -197,7 +200,7 @@ padding-top:5rem;
   padding-bottom: 5rem;
   border-radius: 10px;
   background-color: var(--Light);
-width: 80vw;
+  width: 80vw;
   margin-bottom: 10rem;
 }
 
@@ -206,25 +209,25 @@ width: 80vw;
   width: 80%;
   font-weight: 900;
   background-color: var(--Light);
- }
+}
 
 
-.mail-link{
+.mail-link {
   color: var(--Dark);
 }
 
 /* projects */
-.card-projects{
+.card-projects {
   margin-top: 10rem;
 }
-.web-sites-section{
-background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
 
+.web-sites-section {
+  background-image: url(../../public/images/ONZ74N1-01.png);
   margin-top: 5rem;
   padding-bottom: 15rem;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
   height: 100vh;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 60%, transparent 100%);
   overflow: scroll;
@@ -236,15 +239,20 @@ background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.web-sites-section{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.web-sites-section {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 /* [1] The container */
 .img-hover-zoom {
- /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  /* [1.1] Set it as per your need */
+  overflow: hidden;
+  /* [1.2] Hide the overflowing of child elements */
 }
+
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
   transition: transform .5s ease;
@@ -255,12 +263,21 @@ background-image:url(../../public/images/Set_of_programmers_02_01.jpg);
   transform: scale(1.1);
 }
 
+/* About */
+.about{
+  background-image: url(../../public/images/Set_of_programmers_02_01.jpg);
+  margin-top: 5rem;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:80vh;
+}
 
 /* footer */
 .footer {
   text-align: center;
   background: rgb(255, 255, 255);
-  color:var(--Dark);
+  color: var(--Dark);
   padding: 20px;
   margin-top: 20px;
   bottom: 0;
