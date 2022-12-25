@@ -42,7 +42,7 @@ function Projects() {
     </Col>
     <Col className='d-flex justify-content-center align-items-center'>
     <Card style={{ width: '18rem' }} className="card-projects">
-    <div className='img-hover-zoom'><Card.Img variant="top" src='./images/newsapp.jpg' /></div>
+    <div className='img-hover-zoom'><Card.Img variant="top" src='./images/sGlobe.jpg' /></div>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -51,8 +51,9 @@ function Projects() {
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="https://the-today-news.vercel.app" target="_blank"> <SiVercel/> TheTodayNews</Card.Link>
-        <Card.Link href="https://github.com/Mat1na/NewsAppFrontForDeploy" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
+        <Card.Link href="https://s-globe-front.vercel.app/" target="_blank"> <SiVercel/>sGlobe Lab</Card.Link>
+        <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />Front End</Card.Link>
+        <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />Back End</Card.Link>
       </Card.Body>
     </Card>
     </Col>
