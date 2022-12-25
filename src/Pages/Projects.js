@@ -13,14 +13,13 @@ function Projects() {
     <Card style={{ width: '18rem' }} className="card-projects">
    <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>My Portfolio</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          My portfolio was created as a React application
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="/" > <SiNetlify/> MyPortfolio</Card.Link>
+        <Card.Link href="/" > <SiVercel/> MyPortfolio</Card.Link>
         <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
       </Card.Body>
     </Card>
