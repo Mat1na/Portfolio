@@ -12,7 +12,10 @@ function Header() {
 
       <Navbar.Brand href="/">Mat1na <BiCodeCurly /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"  className='toggler' >  
-     <MdOutlineSegment size={'2em'} fill='var(--Dark)'  className="social-icon" />
+      <span className='toggler-icon top-bar'></span>
+        <span className='toggler-icon middle-bar'></span>
+        <span className='toggler-icon bottom-bar'></span>
+     {/* <MdOutlineSegment size={'2em'} fill='var(--Dark)'  className="social-icon" /> */}
      {/* <MdOutlineClose size={'2em'} fill='var(--Dark)'  className="social-icon" /> */}
       </Navbar.Toggle>
     
