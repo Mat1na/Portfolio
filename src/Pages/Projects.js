@@ -19,7 +19,7 @@ function Projects() {
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="/" > <SiVercel/> MyPortfolio</Card.Link>
+        <Card.Link href="/" > <SiVercel fill='var(--Dark)'/> MyPortfolio</Card.Link>
         <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
       </Card.Body>
     </Card>
@@ -51,7 +51,7 @@ function Projects() {
         </Card.Text>
       </Card.Body>
         <Card.Body>
-        <Card.Link href="https://s-globe-front.vercel.app/" target="_blank"> <SiVercel/>sGlobe Lab</Card.Link>
+        <Card.Link href="https://s-globe-front.vercel.app/" target="_blank"> <SiVercel fill='var(--Dark)'/>sGlobe Lab</Card.Link>
         <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />Front End</Card.Link>
         <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />Back End</Card.Link>
       </Card.Body>
