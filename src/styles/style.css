@@ -9,7 +9,7 @@
   --Light: rgb(170, 201, 182);
   font-family: 'Roboto', sans-serif; 
   --my-font: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   padding: 0px;
   margin: 0px;
 
@@ -17,7 +17,17 @@
 
 body {
   font-family: var(--my-font);
-  font-weight: 700;
+  color: var(--Dark);
+  font-weight: 300;
+  min-height: 100vh;
+  width: 100%;
+}
+html {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto !important;
+  height: 100%;
 }
 
 .row {
@@ -86,16 +96,15 @@ body {
 .navbar-brand {
   position: relative;
   font-weight: 700;
-  color: rgb(27, 46, 53);
+  color: var(--Dark);
   font-size: 1.5rem;
   transition: transform 2ms ease-in-out;
 }
 
-/* .navbar-brand:hover {
-
-    font-size: 1.6rem;
-
-} */
+.navbar-brand:hover {
+  text-decoration: none;
+color: var(--Dark);
+}
 
 .me-auto {
   display: flex;
@@ -106,13 +115,14 @@ body {
 
 .nav-link {
   position: relative;
-  color: rgb(27, 46, 53);
+  color: var(--Dark);
   transition: transform 2ms ease-in-out;
 
 }
 
 .nav-link:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
+  color: var(--Dark);
 }
 
 .social-icon {
@@ -270,12 +280,27 @@ body {
 .about{
   background-image: url(../../public/images/Set_of_programmers_02_01.jpg);
   margin-top: 5rem;
-  height: 80vh;
+  height:100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size:80vh;
 }
 
+.about-text{
+  background-color: rgba(170, 201, 182, 0.849);
+  padding: 10px;
+  font-weight: 400;
+
+}
+.link-about{
+  color: var(--Dark);
+  font-weight: 500;
+
+ 
+}
+.link-about:hover{
+  color: var(--Dark);
+}
 /* footer */
 .footer {
   text-align: center;
@@ -440,7 +465,7 @@ a:-webkit-any-link {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size:6vw;
+  font-size:5vw;
 }
 
 .noselect2 {
@@ -450,7 +475,7 @@ a:-webkit-any-link {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 #btn:hover {
@@ -491,7 +516,7 @@ a:-webkit-any-link {
   position: absolute;
   height: 3px;
   width: 100%;
-  background:black;
+  background:var(--Dark);
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -543,7 +568,7 @@ a:-webkit-any-link {
 
 /* Color of 3 lines */
 .navbar-toggler.collapsed .toggler-icon {
-  background:black;
+  background: var(--Dark);
 }
 
 

@@ -64,8 +64,8 @@ function Home({ chilrden }) {
       {window.innerWidth >= 768? (
         <Row className='section2 d-flex justify-content-center align-items-center'>
           <Col md={6} className='section2-text p-5'>
-            <h1>My projects {console.log(window.innerWidth)}</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
+            <h2>My Web Development projects {console.log(window.innerWidth)}</h2>
+            <p>Small collection of my first dive in the world of web development!</p>
             <div className='btn2-container'>
               <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
             </div>
@@ -79,10 +79,10 @@ function Home({ chilrden }) {
             <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
           </Col>
           <Col md={6} className={`img-section2-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
-            <h1>My projects {console.log(window.innerWidth)}</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
+            <h2>My Web Development projects {console.log(window.innerWidth)}</h2>
+            <p>Small collection of my first dive in the world of web development!</p>
             <div className='btn2-container'>
-              <a id="btn" href='/projects'  ><span className="noselect2">Take a look</span><div id="circle"></div></a>
+              <a id="btn" href='/projects' target="blank" ><span className="noselect2">Take a look</span><div id="circle"></div></a>
             </div>
           </Col >
         </Row>)}
@@ -92,8 +92,8 @@ function Home({ chilrden }) {
           <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible ? "imgMove" : ""}`} ref={img3Ref} />
         </Col>
         <Col md={6} className={`img-section3-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
-          <h1>My projects </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis purus quis enim porta, vitae dapibus augue viverra. Quisque in molestie est. Praesent ullamcorper tellus nec justo interdum, et tempor justo gravida. In quis consectetur felis.</p>
+          <h2>My Graphic Design projects </h2>
+          <p>A collection of graphic design projects that I worked on during my time as a student, intern and freelancer.</p>
           <div className='btn3-container'><a id="btn" href='./document/portfolio2022.pdf' target="blank" ><span className="noselect2">Take a look</span><div id="circle"></div></a></div>
         </Col >
       </Row>
