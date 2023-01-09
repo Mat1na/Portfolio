@@ -43,7 +43,7 @@ function Projects() {
               <Card.Body>
                 <Card.Title>MovieBlender</Card.Title>
                 <Card.Text>
-                 MovieBlender is React project which works as a movie finder by genre catgories or custom search </br>
+                 MovieBlender is React project which works as a movie finder by genre catgories or custom search <br/>
                   Technologies used:
                   <ul>
                     <li>React router</li>
