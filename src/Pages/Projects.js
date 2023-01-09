@@ -10,7 +10,7 @@ function Projects() {
       <Container className='web-sites-section'>
         <Row className='justify-content-center web-sites' >
           <Col className='d-flex justify-content-center align-items-center'>
-            <Card style={{ width: '30rem',height:'40rem' }} className="card-projects me-4">
+            <Card style={{ width: '40rem',height:'40rem' }} className="card-projects me-4">
               <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
               <Card.Body>
                 <Card.Title>My Portfolio</Card.Title>
@@ -38,7 +38,7 @@ function Projects() {
 
           </Col>
           <Col className='d-flex justify-content-center align-items-center'>
-            <Card style={{ width: '30rem',height:'40rem' }} className="card-projects">
+            <Card style={{ width: '40rem',height:'40rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/movieapp.jpg' /></div>
               <Card.Body>
                 <Card.Title>MovieBlender</Card.Title>

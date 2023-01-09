@@ -282,7 +282,7 @@ color: var(--Dark);
 .about{
   background-image: url(../../public/images/Set_of_programmers_02_01.jpg);
   margin-top: 5rem;
-  height:100%;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size:100vh;
