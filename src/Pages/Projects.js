@@ -32,7 +32,7 @@ function Projects() {
               </Card.Body>
               <Card.Body>
                 <Card.Link href="/" > <SiVercel fill='var(--Dark)' /> MyPortfolio</Card.Link>
-                <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
+                <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' />View on Github</Card.Link>
               </Card.Body>
             </Card>
 
@@ -50,20 +50,19 @@ function Projects() {
                     <li>JSX</li>
                     <li>Bootstrap 5</li>
                     <li>CSS3</li>
-                    <li>CSS animations</li>
-                    <li>React Icons</li>
-                    <li>npm pakcages: eg intersection-observer , typewriter-effect</li>
+                    <li>RestFull API</li>
+                    <li>Fetching content from free movie database</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
               <Card.Body>
-                <Card.Link href="https://movieblender.netlify.app/" target="_blank"> <SiNetlify /> Movieblender</Card.Link>
-                <Card.Link href="https://github.com/Mat1na/MovieApp" target="_blank"><FaGithub fill='var(--Dark)' /> Github</Card.Link>
+                <Card.Link href="https://movieblender.netlify.app/" target="_blank"> <SiNetlify />Visit Movieblender</Card.Link>
+                <Card.Link href="https://github.com/Mat1na/MovieApp" target="_blank"><FaGithub fill='var(--Dark)' />View on Github</Card.Link>
               </Card.Body>
             </Card>
           </Col>
           <Col className='d-flex justify-content-center align-items-center'>
-            <Card style={{ width: '30rem',height:'40rem' }} className="card-projects">
+            <Card style={{ width: '40rem',height:'50rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/sGlobe.jpg' /></div>
               <Card.Body>
                 <Card.Title>sGlobe Lab</Card.Title>
@@ -77,6 +76,7 @@ function Projects() {
                     <li>NodeJS</li>
                     <li>bcrypt</li>
                     <li>JSON Web Token</li>
+                    <li>HTTP Requests</li>
                     <li>MongoDB</li>
                     <li>Bootstrap 5</li>
                     <li>CSS3</li>
@@ -88,8 +88,8 @@ function Projects() {
               </Card.Body>
               <Card.Body>
                 <Card.Link href="https://s-globe-front.vercel.app" target="_blank"> <SiVercel fill='var(--Dark)' />Visit sGlobe Lab</Card.Link><br />
-                <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />Front End</Card.Link>
-                <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />Back End</Card.Link>
+                <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />View Front-End code on Github</Card.Link>
+                <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />View Back-End code on Github</Card.Link>
               </Card.Body>
             </Card>
           </Col>
