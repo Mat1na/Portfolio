@@ -1,9 +1,8 @@
-import { Button } from 'bootstrap';
-import React, { useEffect } from 'react'
-import { Nav, Navbar, Container } from "react-bootstrap"
+import React from 'react'
+import { Nav, Navbar} from "react-bootstrap"
 import { BiCodeCurly } from 'react-icons/bi'
 import { FaInstagram, FaLinkedin, FaGithub, } from 'react-icons/fa'
-import {MdOutlineSegment, MdOutlineClose} from 'react-icons/md'
+
 
 function Header() {
 
@@ -22,7 +21,7 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav" >
         <Nav className="me-auto">
           <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/About">About</Nav.Link>
+          <Nav.Link href="/About">About Me</Nav.Link>
           <Nav.Link href="/Projects">Projects</Nav.Link>
           <Nav.Link href="/Contact">Say Hi!</Nav.Link>
         </Nav>
