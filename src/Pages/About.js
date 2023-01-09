@@ -19,10 +19,10 @@ function About() {
 
 
         <p> This Portfolio is a collection of some projects I worked on during my studies as a Web Developer but also my works and personal graphic design projects.</p>
-        <div className=''>
+        <div className='link-about'>
           <a className='link-about' href='/projects' target="blank" ><span className="">Web Development Projects</span></a>
         </div>
-        <div className=''><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div></Col>
+        <div className='link-about'><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div></Col>
       </Row>
       </Container>
       </>

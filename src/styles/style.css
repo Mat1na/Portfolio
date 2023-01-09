@@ -300,9 +300,7 @@ color: var(--Dark);
 .link-about{
   color: var(--Dark);
   font-weight: 500;
-
- 
-}
+ }
 .link-about:hover{
   color: var(--Dark);
 }

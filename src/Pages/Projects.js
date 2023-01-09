@@ -9,14 +9,14 @@ function Projects() {
     <>
       <Container className='web-sites-section'>
         <Row className='justify-content-center web-sites' >
-          <Col className='d-flex justify-content-center align-items-center'>
+          <Col className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem',height:'40rem' }} className="card-projects me-4">
               <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
               <Card.Body>
                 <Card.Title>My Portfolio</Card.Title>
                 <Card.Text>
 
-                My portfolio was created as a React application
+                My portfolio was created as a React application <br/>
               Technologies used:
               <ul>
                 <li>React router</li>
@@ -37,13 +37,13 @@ function Projects() {
             </Card>
 
           </Col>
-          <Col className='d-flex justify-content-center align-items-center'>
+          <Col className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem',height:'40rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/movieapp.jpg' /></div>
               <Card.Body>
                 <Card.Title>MovieBlender</Card.Title>
                 <Card.Text>
-                  My portfolio was created as a React application
+                 MovieBlender is React project which works as a movie finder by genre catgories or custom search </br>
                   Technologies used:
                   <ul>
                     <li>React router</li>
@@ -61,7 +61,7 @@ function Projects() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className='d-flex justify-content-center align-items-center'>
+          <Col className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem',height:'50rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/sGlobe.jpg' /></div>
               <Card.Body>
