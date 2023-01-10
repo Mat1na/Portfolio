@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion ,useIsPresent} from "framer-motion"
 
-function AnimatedPage({children ,isVisible}) {
+function AnimatedPage({children}) {
     const isPresent = useIsPresent();
   return (
     

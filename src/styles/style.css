@@ -593,5 +593,5 @@ a:-webkit-any-link {
   right: 0;
   bottom: 0;
   background-color: var(--Light);
-  z-index: 2;
+  z-index: 10000;
 }

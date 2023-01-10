@@ -26,14 +26,14 @@ function Projects() {
                     <li>CSS3</li>
                     <li>CSS animations</li>
                     <li>React Icons</li>
-                    <li>npm pakcages: eg intersection-observer , typewriter-effect</li>
+                    <li>npm pakcages: eg intersection-observer , typewriter-effect, framer-motion</li>
                   </ul>
 
                 </Card.Text>
               </Card.Body>
               <Card.Body>
                 <Card.Link href="/" > <SiVercel fill='var(--Dark)' /> MyPortfolio</Card.Link>
-                <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' />View on Github</Card.Link>
+                <Card.Link href="https://github.com/Mat1na/Portfolio" target="_blank"><FaGithub fill='var(--Dark)' />View source code on Github</Card.Link>
               </Card.Body>
             </Card>
 
