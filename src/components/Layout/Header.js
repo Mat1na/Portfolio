@@ -24,7 +24,7 @@ function Header() {
           <Nav.Link href="/About">About Me</Nav.Link>
           <Nav.Link href="/Projects">Projects</Nav.Link>
           <Nav.Link href="/Contact">Say Hi!</Nav.Link>
-          <Nav.Link href="./document/cvStamatiaBampa.pdf">CV</Nav.Link>
+          <Nav.Link href="./document/cvStamatiaBampa.pdf" target="blank">CV</Nav.Link>
         </Nav>
         <Nav className='d-flex flex-row social'>
           <a href='https://www.linkedin.com/in/matinabampa/' target="_blank" rel="noreferrer noopener"><FaLinkedin size={'2em'} fill='var(--Dark)' className="social-icon  p-1 rounded-1 mx-1" /></a>
