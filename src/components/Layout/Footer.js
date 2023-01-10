@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className='footer'>
-        Made by Matina Bampa &copy; 2022
+      &copy; 2022 Matina Bampa 
         <div>
           <a href='https://www.linkedin.com/in/matinabampa/' target="_blank" rel="noreferrer noopener"><FaLinkedin size={'2em'} fill='var(--Dark)' className="social-icon  p-1 rounded-1 mx-1" /></a>
 
