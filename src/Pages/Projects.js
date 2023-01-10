@@ -1,16 +1,16 @@
 import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { SiNetlify, SiVercel } from 'react-icons/si';
-import {FaGithub, } from 'react-icons/fa'
+import { FaGithub, } from 'react-icons/fa'
 import AnimatedPage from '../components/Layout/AnimatedPage'
 
 function Projects() {
   return (
     <>
-    <AnimatedPage/>
+      <AnimatedPage />
       <Container className='web-sites-section'>
         <Row className='justify-content-center web-sites' >
-          <Col className='d-flex justify-content-center align-items-center m-2'>
+          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '40rem' }} className="card-projects me-4">
               <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
               <Card.Body>
@@ -38,7 +38,7 @@ function Projects() {
             </Card>
 
           </Col>
-          <Col className='d-flex justify-content-center align-items-center m-2'>
+          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '40rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/movieapp.jpg' /></div>
               <Card.Body>
@@ -62,7 +62,7 @@ function Projects() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className='d-flex justify-content-center align-items-center m-2'>
+          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '50rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/sGlobe.jpg' /></div>
               <Card.Body>
@@ -89,6 +89,24 @@ function Projects() {
                 <Card.Link href="https://s-globe-front.vercel.app" target="_blank"> <SiVercel fill='var(--Dark)' />Visit sGlobe Lab</Card.Link><br />
                 <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />View source code (Front-End )code on Github</Card.Link>
                 <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />View source code (Back-End code) on Github</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
+            <Card style={{ width: '40rem', height: '30rem' }} className="card-projects">
+              <div className='img-hover-zoom'><Card.Img variant="top" src='./images/portfolioGD.jpg' /></div>
+              <Card.Body>
+                <Card.Title>Graphic design Projects</Card.Title>
+                <Card.Text>
+                  This is my Graphic design Portfolio that was made with Adobe Illustrator.
+                  You can find here a collection of graphic design projects that I worked on during my time as a student, intern and freelancer.<br /><br />
+                  Projects were created with:
+                  <ul>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe InDesign</li>
+                  </ul>
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>

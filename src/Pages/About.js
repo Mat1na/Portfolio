@@ -2,33 +2,40 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import AnimatedPage from '../components/Layout/AnimatedPage'
 
+
+
 function About() {
+
   return (
-   <> 
-   <AnimatedPage/>
-    <Container className='about d-flex align-items-center'>
-   
-     <Row  className=' d-flex justify-content-center  pt-4'>
-      <Col md={12}> <h1 className='pt-4'>About Me</h1></Col>  
-      <Col className='about-text '><p>My name is Stamatia Bampa and I am a <b> Junior Web Developer </b>just starting up and a <b>Graphic Designer</b>. I recently relocated from Athens
-        to Brussels, seeking to get insights into another cultural environment and improve myself professionally and
-        educationally.</p>
-        <p>I am conscious of the creativity around me, sometimes drawing inspiration from even the simplest daily activities. My biggest stimulation comes from art, cartoon movies and fashion which I incorporate in my work.
-        </p>
-        <p>Several years ago, I obtained my bachelor's degree in Avionics and communications and I learn quickly that I am incredibly eager to learn and constantly educate myself.After my bachelor I also took a course in graphic design and I am expanding my knowledge by taking a course in web development.</p>
-        <p>Instantly I realized that web development is a fast-paced and challenging career that focuses on creative problem solving and constant innovation. I immediately fell in love with it because it's a combination of my two great interests, technology and design.</p>
-        <p>Through the <b>Web Development </b>course at <b>Intec Brussels</b>, I resumed my learning process and strengthened my computer skills. Among other things, I sharpened my knowledge with HTML, CSS, Bootstrap, JavaScript, React and Nodejs.</p>
+    <>
+      <AnimatedPage />
+      <Container className='about d-flex align-items-center'>
+
+        <Row className=' d-flex justify-content-center  pt-4'>
+          <Col md={12}> <h1 className='pt-4'>About Me</h1></Col>
+          <Col md={12} className='about-text '><p>My name is Stamatia Bampa and I am a <b> Junior Web Developer </b>just starting up and a <b>Graphic Designer</b>. I recently relocated from Athens
+            to Brussels, seeking to get insights into another cultural environment and improve myself professionally and
+            educationally.</p>
+            <p>I am conscious of the creativity around me, sometimes drawing inspiration from even the simplest daily activities. My biggest stimulation comes from art, cartoon movies and fashion which I incorporate in my work.
+            </p>
+            <p>Several years ago, I obtained my bachelor's degree in Avionics and communications and I learn quickly that I am incredibly eager to learn and constantly educate myself.After my bachelor I also took a course in graphic design and I am expanding my knowledge by taking a course in web development.</p>
+            <p>Instantly I realized that web development is a fast-paced and challenging career that focuses on creative problem solving and constant innovation. I immediately fell in love with it because it's a combination of my two great interests, technology and design.</p>
+            <p>Through the <b>Web Development </b>course at <b>Intec Brussels</b>, I resumed my learning process and strengthened my computer skills. Among other things, I sharpened my knowledge with HTML, CSS, Bootstrap, JavaScript, React and Nodejs.</p>
 
 
-        <p> This portfolio is a collection of some projects that I worked on during my studies as a Web Developer and my academic and professional work in graphic design.</p>
-        <div className='link-about'>
-          <a className='link-about' href='/projects' target="blank" ><span className="">Web Development Projects</span></a>
-        </div>
-        <div className='link-about'><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div></Col>
-      </Row>
+            <p> This portfolio is a collection of some projects that I worked on during my studies as a Web Developer and my academic and professional work in graphic design.</p>
+            <div className='link-about'>
+              <a className='link-about' href='/projects' target="blank" ><span className="">Web Development Projects</span></a>
+            </div>
+            <div className='link-about'><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div>
+            <div className='btn-container d-flex justify-content-center align-items-center pt-4'>
+              <a id="btn" href="/Contact"><span className="noselect">Say Hi!</span><div id="circle"></div></a>
+            </div>
+            </Col>
+        </Row>
       </Container>
-      
-      </>
+
+    </>
   )
 }
 

@@ -7,7 +7,6 @@ import Home from './Pages/Home'
 import Projects from './Pages/Projects'
 import { Helmet } from "react-helmet";
 
-
 const TITLE = 'Stamatia Bampa';
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-   
       <AppLayout>
         <Routes >
           <Route path="/" element={<Home />} />
@@ -23,9 +21,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>
-
       </AppLayout>
-      
     </>
   )
 }

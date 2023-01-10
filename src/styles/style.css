@@ -79,6 +79,7 @@ html {
   font-size: 1rem;
 }
 
+
 .header {
   position: fixed;
   top: 0;
@@ -122,8 +123,10 @@ color: var(--Dark);
 }
 
 .nav-link:hover {
-  transform: scale(1.01);
-  color: var(--Dark);
+  transform: scale(1.02);
+  color:var(--Dark);
+  background-color: var(--Light);
+
 }
 
 .social-icon {
