@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState, } from 'react'
+import React, { useEffect, useState, } from 'react'
 import { Col, Row, Container } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
 import Typewriter from 'typewriter-effect';
-
+import AnimatedPage from '../components/Layout/AnimatedPage'
 
 
 
@@ -19,11 +19,12 @@ function Home({ chilrden }) {
   }, []);
 
 
-  return (
-    <>
+  return (<>
+    <AnimatedPage/>
+    <Container className="px-4">
       <Row className='head d-flex justify-content-center align-items-center' >
         <Col md={6} xs={12} className="img-home-container d-flex justify-content-center align-items-center">
-          <img src='./images/me33.png' className='img-head' />
+          <img src='./images/me33.png' className='img-head' alt='me illustration'/>
         </Col>
         <Col md={6} xs={12} className="typewriter-effect-container ">
           <div className='text-center typewriter'>
@@ -71,12 +72,12 @@ function Home({ chilrden }) {
             </div>
           </Col >
           <Col md={6} className="img-section-container p-5"  >
-            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
+            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} alt='coding illustration'/>
           </Col>
         </Row>) : (
         <Row className='section2 d-flex justify-content-center align-items-center'>
           <Col md={6} className="img-section-container p-5"  >
-            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} />
+            <img src='./images/code.jpg' className={`img-section2 ${myImg2IsVisible ? "imgMove " : ""}`} ref={img2Ref} alt='coding illustration'/>
           </Col>
           <Col md={6} className={`img-section2-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
             <h2>My Web Development projects {console.log(window.innerWidth)}</h2>
@@ -89,7 +90,7 @@ function Home({ chilrden }) {
       <div className=' m-5'><hr /></div>
       <Row className='section3 d-flex justify-content-center align-items-center '>
         <Col md={6} className={`img-section3-container ${window.innerWidth >= 768? "p-5":"px-5 py-2"}`}>
-          <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible ? "imgMove" : ""}`} ref={img3Ref} />
+          <img src='./images/Designer-girlgreen.jpg' className={`img-section3 ${myImg3IsVisible ? "imgMove" : ""}`} ref={img3Ref} alt='designing illustration'/>
         </Col>
         <Col md={6} className={`img-section3-text ${window.innerWidth >= 768? "p-5":" px-5 py-2 mb-5"}`}>
           <h2>My Graphic Design projects </h2>
@@ -99,6 +100,8 @@ function Home({ chilrden }) {
       </Row>
 
 
+    </Container>
+    
     </>
   )
 }

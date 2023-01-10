@@ -1,9 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import AnimatedPage from '../components/Layout/AnimatedPage'
 
 function About() {
   return (
    <> 
+   <AnimatedPage/>
     <Container className='about d-flex align-items-center'>
    
      <Row  className=' d-flex justify-content-center  pt-4'>
@@ -25,6 +27,7 @@ function About() {
         <div className='link-about'><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div></Col>
       </Row>
       </Container>
+      
       </>
   )
 }

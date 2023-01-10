@@ -2,11 +2,12 @@ import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { SiNetlify, SiVercel } from 'react-icons/si';
 import {FaGithub, } from 'react-icons/fa'
-
+import AnimatedPage from '../components/Layout/AnimatedPage'
 
 function Projects() {
   return (
     <>
+    <AnimatedPage/>
       <Container className='web-sites-section'>
         <Row className='justify-content-center web-sites' >
           <Col className='d-flex justify-content-center align-items-center m-2'>

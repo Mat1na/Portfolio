@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Projects from './Pages/Projects'
 import {Helmet} from "react-helmet";
 
+
 const TITLE = 'Stamatia Bampa';
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Helmet>
           <title>{ TITLE }</title>
         </Helmet>
-      <AppLayout>
+      <AppLayout> 
 
     <Routes >
     <Route path="/" element={<Home />} />

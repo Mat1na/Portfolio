@@ -43,8 +43,8 @@ html {
 
   font-weight: 400;
   font-size: 3rem;
-  line-height: 7rem;
-  width: 50%;
+  line-height: 5rem;
+  width: 80%;
 }
 
 .navbar-collapse.collapsing>div.me-auto {
@@ -584,4 +584,14 @@ a:-webkit-any-link {
   text-decoration: none;
   outline: 0;
   box-shadow: none
+}
+
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Light);
+  z-index: 2;
 }
