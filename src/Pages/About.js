@@ -13,7 +13,7 @@ function About() {
 
         <Row className=' d-flex justify-content-center  pt-4'>
           <Col md={12}> <h1 className='pt-4'>About Me</h1></Col>
-          <Col md={12} className='about-text '><p>My name is Stamatia Bampa and I am a <b> Junior Web Developer </b>just starting up and a <b>Graphic Designer</b>. I recently relocated from Athens
+          <Col className='about-text '><p>My name is Stamatia Bampa and I am a <b> Junior Web Developer </b>just starting up and a <b>Graphic Designer</b>. I recently relocated from Athens
             to Brussels, seeking to get insights into another cultural environment and improve myself professionally and
             educationally.</p>
             <p>I am conscious of the creativity around me, sometimes drawing inspiration from even the simplest daily activities. My biggest stimulation comes from art, cartoon movies and fashion which I incorporate in my work.
@@ -29,7 +29,7 @@ function About() {
             </div>
             <div className='link-about'><a className='link-about' href='./document/portfolio2022.pdf' target="blank" ><span className="">Graphic Design Portfolio</span></a></div>
             <div className='btn-container d-flex justify-content-center align-items-center pt-4'>
-              <a id="btn" href="/Contact"><span className="noselect">Say Hi!</span><div id="circle"></div></a>
+              <a id="btn" href="/Contact"><span className="noselect2">Say Hi!</span><div id="circle"></div></a>
             </div>
             </Col>
         </Row>
