@@ -18,7 +18,7 @@ function About() {
         <p>Through the <b>Web Development </b>course at <b>Intec Brussels</b>, I resumed my learning process and strengthened my computer skills. Among other things, I sharpened my knowledge with HTML, CSS, Bootstrap, JavaScript, React and Nodejs.</p>
 
 
-        <p> This Portfolio is a collection of some projects I worked on during my studies as a Web Developer but also my works and personal graphic design projects.</p>
+        <p> This portfolio is a collection of some projects that I worked on during my studies as a Web Developer and my academic and professional work in graphic design.</p>
         <div className='link-about'>
           <a className='link-about' href='/projects' target="blank" ><span className="">Web Development Projects</span></a>
         </div>
