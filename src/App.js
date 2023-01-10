@@ -5,11 +5,15 @@ import Contact from "./Pages/Contact"
 import About from './Pages/About'
 import Home from './Pages/Home'
 import Projects from './Pages/Projects'
+import {Helmet} from "react-helmet";
 
-
+const TITLE = 'Stamatia Bampa';
 function App() {
   return (
     <>
+            <Helmet>
+          <title>{ TITLE }</title>
+        </Helmet>
       <AppLayout>
 
     <Routes >
