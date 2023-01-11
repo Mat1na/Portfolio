@@ -9,8 +9,7 @@ function Projects() {
     <>
       <AnimatedPage />
              <Container className='web-sites-section'>
-        <Row className='justify-content-center web-sites' >
-        < Col md={2} className='section1 d-flex justify-content-center align-items-center text-center pro-scroll'>
+             < Col className='section1 d-flex justify-content-center align-items-center text-center pro-scroll'>
         <div id="wrapper d-flex justify-content-center align-items-center text-center" >
           <div id="wrapper-inner ">
             <Col md={12} id="scroll-title" className=' '>
@@ -23,6 +22,8 @@ function Projects() {
           </div>
         </div>
       </ Col>
+        <Row className='justify-content-center web-sites' >
+
           <Col  className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '40rem' }} className="card-projects me-4">
               <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
