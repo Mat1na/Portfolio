@@ -8,9 +8,22 @@ function Projects() {
   return (
     <>
       <AnimatedPage />
-      <Container className='web-sites-section'>
+             <Container className='web-sites-section'>
         <Row className='justify-content-center web-sites' >
-          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
+        < Col md={2} className='section1 d-flex justify-content-center align-items-center text-center pro-scroll'>
+        <div id="wrapper d-flex justify-content-center align-items-center text-center" >
+          <div id="wrapper-inner ">
+            <Col md={12} id="scroll-title" className=' '>
+              Keep Scrolling
+            </Col>
+            <Col md={12} id="scroll-down" className='d-flex justify-content-center align-items-center text-center '>
+              <span className="arrow-down ">
+              </span>
+            </Col>
+          </div>
+        </div>
+      </ Col>
+          <Col  className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '40rem' }} className="card-projects me-4">
               <div className='img-hover-zoom'><Card.Img variant="top" className='project-img' src='./images/portfolio.jpg' /></div>
               <Card.Body>
@@ -38,7 +51,7 @@ function Projects() {
             </Card>
 
           </Col>
-          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
+          <Col  className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '40rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/movieapp.jpg' /></div>
               <Card.Body>
@@ -62,7 +75,7 @@ function Projects() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
+          <Col  className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '50rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/sGlobe.jpg' /></div>
               <Card.Body>
@@ -92,7 +105,7 @@ function Projects() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6} className='d-flex justify-content-center align-items-center m-2'>
+          <Col className='d-flex justify-content-center align-items-center m-2'>
             <Card style={{ width: '40rem', height: '30rem' }} className="card-projects">
               <div className='img-hover-zoom'><Card.Img variant="top" src='./images/portfolioGD.jpg' /></div>
               <Card.Body>
@@ -108,10 +121,15 @@ function Projects() {
                   </ul>
                 </Card.Text>
               </Card.Body>
+              <Card.Body>
+                <Card.Link href="./document/portfolio2022.pdf" > Take a look</Card.Link>
+                
+              </Card.Body>
             </Card>
           </Col>
         </Row>
       </Container>
+      
 
     </>
   )

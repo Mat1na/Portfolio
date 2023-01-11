@@ -235,13 +235,24 @@ color: var(--Dark);
 
 /* projects */
 
+/* .pro-scroll{
+background-color: var(--Light);
+} */
+a.card-link{
+color: var(--Dark);
+}
+
+a.card-link:hover{
+  color: var(--Light);
+  }
 
 .card-projects {
   margin-top: 10rem;
 }
 
 .web-sites-section {
-  background-image: url(../../public/images/ONZ74N1-01.png);
+  /* background-image: url(../../public/images/ONZ74N1-01.png); */
+  background-color: var(--Light);
   margin-top: 5rem;
   padding-bottom: 15rem;
   background-position: center;
