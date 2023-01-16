@@ -85,7 +85,7 @@ function Projects() {
                 </Card.Text>
               </Card.Body>
               <Card.Body>
-                <Card.Link href="https://s-globe-front.vercel.app" target="_blank"> <SiVercel fill='var(--Dark)' />Visit sGlobe Lab</Card.Link><br />
+                <Card.Link href="https://www.sglobelab.com" target="_blank"> <SiVercel fill='var(--Dark)' />Visit sGlobe Lab</Card.Link><br />
                 <Card.Link href="hhttps://github.com/Mat1na/sGlobeFront" target="_blank"><FaGithub fill='var(--Dark)' />View source code (Front-End )code on Github</Card.Link>
                 <Card.Link href="https://github.com/Mat1na/sGlobeServer" target="_blank"><FaGithub fill='var(--Dark)' />View source code (Back-End code) on Github</Card.Link>
               </Card.Body>
