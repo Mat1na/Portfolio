@@ -3,6 +3,7 @@ import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { BsPhoneVibrateFill, BsPinMapFill } from 'react-icons/bs'
 import { MdAlternateEmail } from 'react-icons/md'
 import emailjs from '@emailjs/browser';
+import AnimatedPage from '../components/Layout/AnimatedPage'
 
 function Contact() {
 
@@ -21,6 +22,7 @@ function Contact() {
   }
   return (
     <>
+    <AnimatedPage/>
       <Row className='contact-page d-flex justify-content-center align-items-center  '>
         <Row className='title-container'>
         <Col md={12} className='pb-2'>

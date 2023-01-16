@@ -43,8 +43,8 @@ html {
 
   font-weight: 400;
   font-size: 3rem;
-  line-height: 7rem;
-  width: 50%;
+  line-height: 5rem;
+  width: 80%;
 }
 
 .navbar-collapse.collapsing>div.me-auto {
@@ -78,6 +78,7 @@ html {
 
   font-size: 1rem;
 }
+
 
 .header {
   position: fixed;
@@ -122,8 +123,10 @@ color: var(--Dark);
 }
 
 .nav-link:hover {
-  transform: scale(1.01);
-  color: var(--Dark);
+  transform: scale(1.02);
+  color:var(--Dark);
+  background-color: var(--Light);
+
 }
 
 .social-icon {
@@ -232,13 +235,24 @@ color: var(--Dark);
 
 /* projects */
 
+/* .pro-scroll{
+background-color: var(--Light);
+} */
+a.card-link{
+color: var(--Dark);
+}
+
+a.card-link:hover{
+  color: var(--Light);
+  }
 
 .card-projects {
   margin-top: 10rem;
 }
 
 .web-sites-section {
-  background-image: url(../../public/images/ONZ74N1-01.png);
+  /* background-image: url(../../public/images/ONZ74N1-01.png); */
+  background-color: var(--Light);
   margin-top: 5rem;
   padding-bottom: 15rem;
   background-position: center;
@@ -584,4 +598,14 @@ a:-webkit-any-link {
   text-decoration: none;
   outline: 0;
   box-shadow: none
+}
+
+.privacy-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--Light);
+  z-index: 100000;
 }
